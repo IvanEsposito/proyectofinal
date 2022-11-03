@@ -1,0 +1,267 @@
+//=========================== Index ===========================//
+#indexMain h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -30px;
+}
+#sectionMarcas{
+    max-width: 1200px;
+    margin: 100px auto;
+
+  }
+
+  .image-wrapper{
+    width: 200px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.section-razer{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+    
+    .bannerImagen{
+        .bannerInfo{
+            height: 650px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-left: 50px;
+
+            h2{
+                color: rgb(68, 214, 44);
+                margin: 0px;
+                font-size: 65px;
+                font-weight: 900;
+                position: relative;
+                bottom: 150px;
+            }
+            p{ 
+                color: white;
+                margin: 0px;
+                text-align: left;
+                font-size: 25px;
+                font-weight: 400;
+                position: relative;
+                bottom: 125px;
+                max-width: 600px;
+            }
+            .btn{   
+                max-width: 260px;
+                position: relative;
+                bottom: 100px;
+                a{
+                    text-decoration: none;
+                    width: 260px;
+                    height: 60px;
+                    background-color: transparent;
+                    color: rgb(68, 214, 44);
+                    border-width: 2px;
+                    border-color: rgb(68, 214, 44);
+                    border-style: solid;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-sizing: border-box;
+                    transition: all 0.3s ease 0s;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: rgb(68, 214, 44);
+                        color: rgb(0, 0, 0);
+                        border-width: 2px;
+                        border-color: transparent;
+                        border-style: solid;
+                    }
+                    &:active{
+                        transform: scale(0.96);
+                    }
+                }
+            }
+        }
+    }
+}
+//=========================== Hardware ===========================//
+
+.hardware{
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+    margin-bottom: 30px;
+
+    .tamanoCajaHardware{
+        background-color: white;
+        border: 1px solid rgb(238, 229, 229);
+        &:hover{
+            border: 1px solid rgb(5, 5, 5);
+        }
+        img{
+            width: 200px;
+            height: auto;
+        }
+    }
+}
+
+//=========================== PC Armadas ===========================//
+
+#rowpcArmadas{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    #colCatspc{
+        text-align: left;
+        background-color: $azuloscuro;
+        border-radius: 1%;
+        ul{
+            list-style: none;
+            padding: 0px;
+            li{
+                text-align: left;
+                margin: 30px 0px;
+                a{
+                    text-decoration: none;
+                    color:white;
+                    font-size: 1.2rem;
+                    font-weight: 500;  
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size 0.4s;
+                    &:hover{
+                        color: white;
+                        background-size: 100% 2px;
+                    }
+                }
+            }
+            h1{
+                font-size: 1.7rem;
+                margin-bottom: 30px;
+                font-weight: 500;
+                color:white;
+            }
+        }
+    }
+    #colListapc{
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .pcArmadas{
+            width: 23%;
+            min-width: 250px;
+            height: auto;
+            margin: 0px 5px 10px 5px;
+            padding: 2px;
+            border-radius:3%;
+            border: 2px solid rgb(238, 229, 229);
+            display: flex;
+            &:hover{
+                border: 2px solid rgb(5, 5, 5);
+            }
+            img{
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+            h5{
+                text-align: center;
+                max-width: 250px;
+                min-height: 50px;
+                font-size: 1rem;
+                word-break: break-all;
+                padding: 3px;
+                margin-bottom: 10px;
+            }
+            p{
+                margin-bottom: 10px;
+                font-size: 1.2rem;
+            }
+            button{
+                height: 38px;
+                color: aquamarine;
+                background-color: black;
+                width: 100%;
+                border-bottom-left-radius:10%;
+                border-bottom-right-radius:10%;
+                &:hover{
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+#main-nosotros{
+    section{
+        .caja{
+            margin:0px auto;
+            width: 90%;
+            overflow-x: hidden;
+            div{
+                margin: 50px 0px;
+                h1{
+                    font-size: 3rem;
+                    color: black;
+                }
+                p{
+                    font-size: 1.5rem;
+                    color: black;
+                }
+                img{
+                    width: 100%;
+                    max-height:600px;
+                    object-fit: cover;    
+                    transition: all 0.3s ease 0s;
+                    &:hover{
+                        width: 110% !important;
+                        height: 110% !important;
+                        margin-left: -5% !important;
+                    }
+                }
+            } 
+        }
+    h2{
+        margin-bottom: 30px;
+    }
+    }
+}
+#bg-contacto{
+    background:url(../img/headers/public2.webp);
+    background-size: contain;
+    padding: 30px 0px;
+    #contactos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px auto;
+        max-width: 568px;
+        color: white;
+        border-radius: 3%;
+        background-color: $azul;
+        h1{
+        text-align: center;
+        font-size: 2.2rem;
+        }
+        p{
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .form{ 
+        font-size: 1.2rem;
+        padding: 20px;
+        width: 100%;
+        max-width: 568px;
+        }
+    }
+}

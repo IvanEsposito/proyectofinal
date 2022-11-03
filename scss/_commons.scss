@@ -1,0 +1,12 @@
+$azuloscuro:#09072c;
+$azul:#0f0a40;
+$blancos:rgb(235,235,235);
+$negro:black;
+
+@mixin refa ($textdecoration, $fontsize, $margin, $padding, $color){
+    text-decoration:$textdecoration;
+    font-size:$fontsize;
+    margin:$margin;
+    padding:$padding;
+    color:$color;    
+}

@@ -1,0 +1,440 @@
+#rgbar {
+  animation: rgbBg 10s linear infinite;
+  background: linear-gradient(45deg, rgb(255, 0, 0) 0%, rgb(255, 0, 255) 18%, rgb(0, 0, 255) 30%, rgb(0, 240, 255) 45%, rgb(0, 255, 0) 63%, rgb(255, 255, 0) 80%, rgb(255, 120, 0) 90%, rgb(255, 0, 0) 100%);
+  background-size: 400% 400%;
+  height: 5px;
+  position: relative;
+}
+
+@keyframes rgbBg {
+  0% {
+    background-position: 400% 0%;
+  }
+  100% {
+    background-position: 0% 400%;
+  }
+}
+#botonera {
+  background-color: #09072c;
+  min-height: 65px;
+}
+#botonera #containerNav {
+  width: 1200px;
+  margin: auto;
+}
+#botonera img {
+  color: white;
+  max-height: 60px;
+}
+#botonera ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0px 20px;
+  padding: 0px;
+  color: white;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.4s;
+}
+#botonera ul li a:hover {
+  color: white;
+  background-size: 100% 2px;
+}
+
+#indexMain h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: -30px;
+}
+
+#sectionMarcas {
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.image-wrapper {
+  width: 200px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+}
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.section-razer {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.section-razer .bannerImagen .bannerInfo {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 50px;
+}
+.section-razer .bannerImagen .bannerInfo h2 {
+  color: rgb(68, 214, 44);
+  margin: 0px;
+  font-size: 65px;
+  font-weight: 900;
+  position: relative;
+  bottom: 150px;
+}
+.section-razer .bannerImagen .bannerInfo p {
+  color: white;
+  margin: 0px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 400;
+  position: relative;
+  bottom: 125px;
+  max-width: 600px;
+}
+.section-razer .bannerImagen .bannerInfo .btn {
+  max-width: 260px;
+  position: relative;
+  bottom: 100px;
+}
+.section-razer .bannerImagen .bannerInfo .btn a {
+  text-decoration: none;
+  width: 260px;
+  height: 60px;
+  background-color: transparent;
+  color: rgb(68, 214, 44);
+  border-width: 2px;
+  border-color: rgb(68, 214, 44);
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  transition: all 0.3s ease 0s;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.section-razer .bannerImagen .bannerInfo .btn a:hover {
+  background-color: rgb(68, 214, 44);
+  color: rgb(0, 0, 0);
+  border-width: 2px;
+  border-color: transparent;
+  border-style: solid;
+}
+.section-razer .bannerImagen .bannerInfo .btn a:active {
+  transform: scale(0.96);
+}
+
+.hardware {
+  max-width: 1050px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.hardware .tamanoCajaHardware {
+  background-color: white;
+  border: 1px solid rgb(238, 229, 229);
+}
+.hardware .tamanoCajaHardware:hover {
+  border: 1px solid rgb(5, 5, 5);
+}
+.hardware .tamanoCajaHardware img {
+  width: 200px;
+  height: auto;
+}
+
+#rowpcArmadas {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#rowpcArmadas #colCatspc {
+  text-align: left;
+  background-color: #09072c;
+  border-radius: 1%;
+}
+#rowpcArmadas #colCatspc ul {
+  list-style: none;
+  padding: 0px;
+}
+#rowpcArmadas #colCatspc ul li {
+  text-align: left;
+  margin: 30px 0px;
+}
+#rowpcArmadas #colCatspc ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.4s;
+}
+#rowpcArmadas #colCatspc ul li a:hover {
+  color: white;
+  background-size: 100% 2px;
+}
+#rowpcArmadas #colCatspc ul h1 {
+  font-size: 1.7rem;
+  margin-bottom: 30px;
+  font-weight: 500;
+  color: white;
+}
+#rowpcArmadas #colListapc div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#rowpcArmadas #colListapc .pcArmadas {
+  width: 23%;
+  min-width: 250px;
+  height: auto;
+  margin: 0px 5px 10px 5px;
+  padding: 2px;
+  border-radius: 3%;
+  border: 2px solid rgb(238, 229, 229);
+  display: flex;
+}
+#rowpcArmadas #colListapc .pcArmadas:hover {
+  border: 2px solid rgb(5, 5, 5);
+}
+#rowpcArmadas #colListapc .pcArmadas img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+#rowpcArmadas #colListapc .pcArmadas h5 {
+  text-align: center;
+  max-width: 250px;
+  min-height: 50px;
+  font-size: 1rem;
+  word-break: break-all;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+#rowpcArmadas #colListapc .pcArmadas p {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+#rowpcArmadas #colListapc .pcArmadas button {
+  height: 38px;
+  color: aquamarine;
+  background-color: black;
+  width: 100%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+#rowpcArmadas #colListapc .pcArmadas button:hover {
+  font-weight: 700;
+}
+
+#main-nosotros section .caja {
+  margin: 0px auto;
+  width: 90%;
+  overflow-x: hidden;
+}
+#main-nosotros section .caja div {
+  margin: 50px 0px;
+}
+#main-nosotros section .caja div h1 {
+  font-size: 3rem;
+  color: black;
+}
+#main-nosotros section .caja div p {
+  font-size: 1.5rem;
+  color: black;
+}
+#main-nosotros section .caja div img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  transition: all 0.3s ease 0s;
+}
+#main-nosotros section .caja div img:hover {
+  width: 110% !important;
+  height: 110% !important;
+  margin-left: -5% !important;
+}
+#main-nosotros section h2 {
+  margin-bottom: 30px;
+}
+
+#bg-contacto {
+  background: url(../img/headers/public2.webp);
+  background-size: contain;
+  padding: 30px 0px;
+}
+#bg-contacto #contactos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  max-width: 568px;
+  color: white;
+  border-radius: 3%;
+  background-color: #0f0a40;
+}
+#bg-contacto #contactos h1 {
+  text-align: center;
+  font-size: 2.2rem;
+}
+#bg-contacto #contactos p {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+#bg-contacto #contactos .form {
+  font-size: 1.2rem;
+  padding: 20px;
+  width: 100%;
+  max-width: 568px;
+}
+
+#footer {
+  background-color: #0f0a40;
+}
+#footer ul li {
+  margin: 15px;
+}
+#footer ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+#footer ul li a:hover {
+  color: white;
+  background-size: 100% 2px;
+}
+#footer #gridColumn {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+#footer #mapa {
+  width: auto;
+  height: 300px;
+}
+#footer .separador {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+#footer .posRedes {
+  padding: 10px;
+  background-color: #0f0a40;
+  text-align: center;
+  color: white;
+}
+#footer .iconoRedes {
+  width: 50px;
+  margin: 0px 5px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+  .cards-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    margin: 0 0.5em;
+    width: 100%/4;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .tamanoCarrousel {
+    width: 90%;
+    margin: auto;
+    height: 400px;
+    object-fit: cover;
+    object-position: left;
+  }
+  .bannerImagen {
+    background: url(../img/headers/public.webp) center right/auto 100% no-repeat rgb(17, 17, 17);
+    height: 650px;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .card:nth-child(4) {
+    display: none;
+  }
+  .cards-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    margin: 0 0.5em;
+    width: 100%/3;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .tamanoCarrousel {
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    object-fit: cover;
+    object-position: left;
+  }
+  .bannerImagen {
+    background: url(../img/headers/public.webp) right/auto 100% no-repeat rgb(17, 17, 17);
+    height: 650px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .card:not(:first-child, :nth-child(2)) {
+    display: none;
+  }
+  .cards-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    margin: 0 0.5em;
+    width: 100%/2;
+    display: flex;
+  }
+  .tamanoCarrousel {
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    object-fit: cover;
+    object-position: left;
+  }
+  #header_img4 {
+    object-position: right;
+  }
+  .bannerImagen {
+    background: url(../img/headers/public.webp) right/auto 100% no-repeat rgb(17, 17, 17);
+    height: 600px;
+  }
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+#botonera{
+    background-color: $azuloscuro;
+    min-height: 65px;
+    #containerNav{
+        width: 1200px;
+        margin: auto;
+    }
+    img{
+        color: white;
+        max-height: 60px;
+    }
+    ul{
+        li{
+            a{
+            @include refa(none,1.2rem,0px 20px,0px, white);
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .4s; 
+            }
+            a:hover{
+            color: white;
+            background-size: 100% 2px;
+            }
+        }
+    } 
+}
+//margin 0px 20px 1.2rem

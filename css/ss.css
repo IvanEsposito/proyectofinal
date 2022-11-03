@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 100%;
+    font-family: var(--font-roboto);
+}
+
+/* =========================== INDEX =========================== */
+body{
+    background-color: rgb(235,235,235);
+}
+main{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#logo{
+    width: 20vh;
+    margin: 0px;
+    padding: 0px;
+}
+#botonera{
+    background-color: #09072c;
+    min-height: 65px;
+}
+#containerNav{
+    width: 1200px;
+    margin: auto;
+}
+#botonera li a{
+    color: white;
+    background-color: #09072c;
+    margin: 0 20px;
+    font-size: 1.2rem;
+
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .4s;
+}
+#botonera ul li a:hover{
+    color: white;
+    background-size: 100% 2px;
+}
+#botonera img{
+    color: white;
+    max-height: 60px;
+}
+#rgbar{
+    animation:rgbBg 10s linear infinite;
+    background:linear-gradient(45deg,
+    rgba(255,0,0,1) 0%,
+    rgba(255,0,255,1) 18%,
+    rgba(0,0,255,1) 30%,
+    rgba(0,240,255,1) 45%,
+    rgba(0,255,0,1) 63%,
+    rgba(255,255,0,1) 80%,
+    rgba(255,120,0,1) 90%,
+    rgba(255,0,0,1) 100%);
+    background-size:400% 400%;
+    height:5px;
+    position: relative;
+}
+@keyframes rgbBg{
+0%{background-position:400% 0%}
+100%{background-position:0% 400%}
+}
+.tamanoCarrousel{
+    width: 95%;
+    margin: auto;
+    height: 400px;
+    object-fit: cover;
+    object-position:center;
+}
+
+#sectionMarcas{
+    max-width: 1200px;
+    margin: 100px auto;
+
+}
+
+  @media screen and (min-width: 992px){ 
+      .cards-wrapper {
+          display: flex;
+          justify-content: center;
+      }
+  
+      .card{
+          margin: 0 .5em;
+          width: 100%/4;
+          display: flex;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+      }
+  }
+@media screen and (max-width: 991px) and (min-width: 768px){ 
+    .card:nth-child(4){
+        display: none;
+    }
+    .cards-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        margin: 0 .5em;
+        width: 100%/3;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .card:not(:first-child,:nth-child(2)){
+        display: none;
+    }
+    .cards-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        margin: 0 .5em;
+        width: 100%/2;
+        display: flex;
+    }
+    
+}
+.image-wrapper{
+    width: 200px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.image-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.section-razer{
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0px;
+    margin: auto;
+    margin-bottom: 100px;
+    display: block;
+}
+
+.bannerImagen{
+    height: 650px;
+    width: 100%;
+    background: url(../img/headers/public.webp) right top / auto 100% no-repeat rgb(17, 17, 17);
+}
+
+.bannerInfo{
+    width: 700px;
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+}
+.bannerInfo h2{
+    
+    color: rgb(68, 214, 44);
+    margin: 0px;
+    font-size: 65px;
+    font-weight: 900;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.div{
+    display: block;
+}
+.bannerInfo p{
+    color: white;
+    margin: 0px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#footer{
+    background-color: #0f0a40;
+}
+
+#footer ul li{
+    margin: 15px;
+}
+#footer ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px;    
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+#footer ul li a:hover{
+    color: white;
+    background-size: 100% 2px;
+}
+#gridColumn{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+}
+#mapa{
+    width: auto;
+    height: 300px;
+}
+.separador{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+.posRedes{
+    padding: 10px;
+    background-color: #0f0a40;
+    text-align: center;
+    color: white
+}
+.iconoRedes{
+    width: 50px;
+    margin: 0px 5px;
+    text-decoration: none;
+}
+/* ========================================== Hardware ==========================================  */
+.hardware{
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+    margin-bottom: 30px;
+}
+main .tamanoCajaHardware{
+    background-color: white;
+    border: 1px solid rgb(238, 229, 229);
+
+}
+.tamanoCajaHardware:hover{
+	border: 1px solid rgb(5, 5, 5);
+}
+.tamanoCategorias{
+    width: 200px;
+    height: auto;
+}
+
+/* ========================================== PC ARMADAS ==========================================  */
+#rowpcArmadas{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#colCatspc{
+    text-align: left;
+}
+#colCatspc ul{
+    list-style: none;
+}
+#colCatspc ul li{
+    margin: 10px 0px 10px 0px;
+    text-align: left;
+
+}
+#colCatspc p{
+    font-size: 1.5rem;
+}
+
+#colCatspc li a{
+    text-decoration: none;
+    color:#0a072d;
+    font-size: 1.3rem;
+}
+#colListapc{
+    flex-wrap: wrap;
+}
+
+.pcArmadas{
+    margin: 10px auto;
+    text-align: center;
+}
+.pcArmadas h5{
+    margin: 10px 0px;
+}
+.pcArmadas p{
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.2rem;
+    margin: 10px 0px;
+}
+
+.imgListapc{
+    width: 100%;
+    max-height: 300px;
+}
+
+.botonpcArmadas{
+    padding: 5px 0px;
+    color: aquamarine;
+    background-color: black;
+    width: 100%;
+}
+
+.cajaGrandeTexto1{
+    margin:30px auto;
+}
+.cajaImagen1{
+    width: 80%;
+    margin: auto;
+}
+.imgNosotros1{
+    width: 100%;
+}
+.cajaGrandeTexto2{
+    margin:30px auto;
+}
+.texth2{
+    margin-bottom: 30px;
+}.cajaImagen2{
+    width: 80%;
+    margin: auto;
+}
+.imgNosotros2{
+    width: 100%;
+}
+
+/* ========================================== PC ARMADAS ==========================================  */

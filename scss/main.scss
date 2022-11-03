@@ -1,0 +1,16 @@
+@import "_commons.scss";
+@import "_animate.scss";
+@import "_nav.scss";
+@import "_mains";
+@import "_footer.scss";
+@import "_media.scss";
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(235,235,235);
+}
