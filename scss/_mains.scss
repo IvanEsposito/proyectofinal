@@ -91,7 +91,7 @@
 //=========================== Hardware ===========================//
 
 .hardware{
-    max-width: 1050px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;  
@@ -101,6 +101,7 @@
     .tamanoCajaHardware{
         background-color: white;
         border: 1px solid rgb(238, 229, 229);
+        margin: 3px;
         &:hover{
             border: 1px solid rgb(5, 5, 5);
         }

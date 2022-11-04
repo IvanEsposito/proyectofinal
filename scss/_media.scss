@@ -95,5 +95,10 @@
     #hamburgesabtn{
         display:flex;
         width: 100%;
+        max-width: 90px;
+    }
+    #logo{
+        width: 100%;
+        max-width: 200px;
     }
 }
